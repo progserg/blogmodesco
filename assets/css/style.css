@@ -1,0 +1,102 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    max-width: 600px;
+    margin: auto;
+}
+.blogs,
+.main-menu{
+    list-style-type: none;
+}
+.main-menu{
+    margin-bottom: 10px;
+}
+.main-menu > li{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: green;
+}
+.main-menu > li:last-child{
+    margin-right: 0;
+}
+.main-menu > li a {
+    color: white;
+}
+.blogs > li{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    height: 50px;
+}
+.blogs > li:nth-child(2n){
+    background-color: lightgrey;
+    border-radius: 3px;
+}
+.blogs > li > a{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    height: 100%;
+    color: cornflowerblue;
+}
+.info:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.info > .name,
+.blogs > li > a > .name{
+    float: left;
+}
+.info > .time,
+.blogs > li > a > .time{
+    float: right;
+}
+.blogs > li > a.blog{
+    float: left;
+    width: 90%;
+}
+.blogs > li > a.delete-blog{
+    float: right;
+    width: 10%;
+    text-align: right;
+}
+
+.full-blog{
+    border-radius: 5px;
+    border: 1px solid cadetblue;
+    padding: 15px 10px;
+}
+.full-blog > .message{
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid cadetblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.full-blog .name{
+    color: darkseagreen;
+}
+.full-blog .time{
+    color: yellowgreen;
+}
+.download{
+    color: chocolate;
+}
+form input,
+form textarea{
+    width: 100%;
+    margin-bottom: 5px;
+}
+textarea{
+    resize: none;
+}
